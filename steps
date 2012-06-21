@@ -1,0 +1,37 @@
+1. :h i_CTRL-X_CTRL-K 
+   anything you want to add, add it to '.vim/dict/mywords', and then
+     
+     set dictionary+=~/.vim/dict/mywords
+  
+   so basiclly u can add whatever you want, but when you have sth like 'hello-world'
+   you need:
+
+     set isk+=-
+   
+   Ubuntu offer a English dict here: dictionary+=/usr/share/dict/words
+
+   then use '*' to get the list
+
+1. :h i_CTRL-X_CTRL-O
+   show in css.
+   check `:h new-omni-completion` to see which languages are supported, so rails is not on the list
+
+1. :h i_CTRL-N
+    
+   OK, so ominifunc can not get me rails api, then what to do?
+
+   check the default scope `:set complete`
+
+   so now you know you can also get `tags`
+
+        ctags -R . `rvm gemdir`      
+
+   now I only get link_to, can I get sth like "<%= link_to ....%>", now enter
+
+1. snipmate
+
+   https://github.com/honza/snipmate-snippets/blob/master/snippets/eruby.snippets
+   show the cool "snipmate+<c-x-o>" in css file
+
+1. :h zencoding
+   tell people its MAINLY about css+html

@@ -1,0 +1,42 @@
+#supertab
+
+  why to mix everything together? not so useful
+
+# i_ctrl_x_o
+
+  i_ctrl_x_o  works nice with css
+  i_ctrl_x_o works with snipmate
+  snipmate working with zencoding
+  use i_ctrl_x_o in .sql requires dbext.vim, which in turn itself is a must have:
+  git clone https://github.com/vim-scripts/dbext.vim.git
+
+  i_ctrl_x_o also works nicely for html( check `:h ft-html-omni`, but by default the rails views are `eruby` type, and even you set it to ft=html, still lots of trouble to use i_ctrl_x_o for it, bad, bad. But still for js file, it works.
+
+
+#ctags rocks
+
+    ctags -R . `rvm gemdir`
+
+then use Ctrl-n, to auto-complete, `ptags xxx` or Ctrl-] to get the definition
+so I have Ctags, I can use Ctrl-N to get all rails method, nice
+but when I get link_to, can I get a code snipet as well?
+
+# snipmate
+
+http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
+
+    Bundle 'gmarik/snipmate.vim'
+    Bundle 'honza/snipmate-snippets'
+
+https://github.com/honza/snipmate-snippets/blob/master/snippets/eruby.snippets
+
+
+# html
+git clone http://github.com/mattn/zencoding-vim.git
+http://nootn.com/blog/Tool/23/   --zencoding tips
+if you love zencoding, you may also love haml
+
+# comment
+
+both comment.vim and Nerdcomment.vim works horriably with erb file, 
+my own solution is "delete + git throw", but don't worth sharing
