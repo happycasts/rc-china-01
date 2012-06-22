@@ -1,0 +1,10 @@
+#rails.vim
+
+should have mention:
+
+  i_Ctrl-x_Ctrl-u
+
+man mabybe
+
+  :h rails-surround
+
